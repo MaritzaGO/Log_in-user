@@ -1,0 +1,25 @@
+
+
+@mixin borde_rojo($border-size, $border-color){
+	border: $border-size solid $border-color;
+	color: red;
+	border-radius: 3px;
+}
+
+
+$color-fuente: #000;
+$fuente: "Verdana";
+$font-size: 14px;
+
+
+.box{
+	@include borde_rojo(5px, #CCCCCC)
+}
+
+.box2{
+	p{
+		.element{
+		}
+	}
+}
+
